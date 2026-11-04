@@ -1,3 +1,7 @@
+---
+layout: guide
+---
+
 # Introduction to Web Development
 This is just a short introduction about web development. It's based on my own understanding. There are lots of resources that you can check upon and for sure this will be constantly udpated as I grow as a web developer.
 
