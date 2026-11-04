@@ -3,53 +3,141 @@ layout: guide
 ---
 
 # Introduction to Web Development
-This is just a short introduction about web development. It's based on my own understanding. There are lots of resources that you can check upon and for sure this will be constantly udpated as I grow as a web developer.
 
-## What is **Web Development**?
-For me, it refers to a process of building, creating and maintaining a website or a piece of application for the internet or intranet.
+Starting your first developer job can feel overwhelming. There are languages, frameworks, cloud services, and AI tools everywhere. You do not need to learn them all at once.
+
+This guide is for fresh graduates and anyone moving from classroom exercises to building useful websites. My advice: **learn one programming language well, understand how the web works, and build small projects you can explain and maintain.** AI can help you learn and create, but your understanding is what helps you fix things when they go wrong.
+
+## What is Web Development?
+
+Web development is the work of building and maintaining websites and web applications. It includes the interface people use, the logic that processes requests, and the data the application stores.
+
+Think of a job application tracker: a user fills in a form, the application checks the information, and the saved application appears in a list. Each part gives you something practical to learn.
+
+## Learn One Programming Language Well
+
+Aim for working fluency in at least one language before spreading your attention across several. “Master” does not mean memorizing every feature or waiting until you know everything. It means you can solve a small problem, explain your choices, find information in the documentation, and debug your own work.
+
+For a web-focused starting point, **JavaScript is a practical first choice** because it runs in the browser and can also run on a server with Node.js. If you already know Python, Java, or C#, keep building that foundation; you can learn browser JavaScript alongside it when needed. HTML and CSS are essential web skills, but they serve different roles from a general-purpose programming language.
+
+Practice these skills in your chosen language:
+
+- **Values and data:** variables, types, arrays or lists, and objects or dictionaries.
+- **Control flow:** conditions, loops, and breaking a problem into functions.
+- **Problem solving:** turn a requirement into small steps before writing code.
+- **Errors and debugging:** read an error message, reproduce the problem, and inspect values with a debugger.
+- **Working with data:** read and write JSON, call an API, and handle a failed request. An API is an agreed way for software to communicate.
+- **Testing:** check expected results, empty input, invalid input, and boundary cases.
+- **Code organization:** use clear names and separate responsibilities so someone else can follow your work.
+
+A useful checkpoint: build a small expense tracker from a blank project. Can you add an expense, calculate a total, validate input, and fix a bug without asking AI to rewrite the whole application? You can consult documentation; the goal is understanding, not a memory test.
 
 ## Basic Concepts
-![image](https://user-images.githubusercontent.com/20568389/131835834-4ade95c6-066d-445a-8d8d-17b24fd5c7da.png)
-- **Server Side** is where we put a bunch of files to be stored in a computer. It’s what we call a server.
-- The other term of server side is **Back-End** which deals with what you cannot see in the browser. It handles a lot of the logic and functionalities being done in your website.
-- **Client Side** – loads the data from the server. Example of which is our browsers such as Google Chrome, Edge and Mozilla.
-- The other term of client side is **Front-End** which deals with what you see in the browser. It handles the visual presentation and viewing behavior of your website.
+
+![Diagram introducing client-side and server-side web development](https://user-images.githubusercontent.com/20568389/131835834-4ade95c6-066d-445a-8d8d-17b24fd5c7da.png)
+
+- **Client / front end:** the part running in the user's browser. It displays information and responds to actions.
+- **Server / back end:** the part that receives requests, applies application rules, and returns responses.
+- **HTTP:** the request-and-response protocol browsers and servers use to communicate.
+- **Database:** a system for storing and retrieving application data.
+
+For example, pressing “Save application” can send an HTTP request to the back end. The server validates the fields, stores the record in a database, and sends back a response. The browser then shows a confirmation or an error.
+
+Some sites do not need a back end. A portfolio or a guide like this one can be published as static HTML, CSS, and JavaScript. Start with the simplest setup that meets your project's needs.
 
 ## Basic Front-end Development
-![image](https://user-images.githubusercontent.com/20568389/131836300-ee346363-1e3d-4c82-ae35-7baaa152281c.png)
-The basic building blocks of a front-end development are the **HTML**, **CSS** and **JavaScript**. These are the things that are being loaded in the browser.
-- **HTML** – Hyper Text MarkUp Language is basically the foundation of all website. This is where it started. It contains all the contents of a particular page on the website. And we utilize tags to indicate that this text is a title, a paragraph, a list or this section is dedicated for an image. Just like our word document
-- **CSS**  - Cascading Style Sheets is the file that let’s us design and put layout in our website to make it more presentable. It let’s us add colors, change the width and height of an element in the HTML and a lot more.
-- **JavaScript** – is a programming language that runs in the browser it let’s us manage the things going on within the website. For example, we have a button, what will our website do if we click that one. So basically, we create a function for it then decide what happens, will it move to the next screen will it change the color of a text in the page?
-- When we say **Frameworks**, these are packages containing pre-written standardized codes of files and folders to better organized our development flow. There are several frameworks that we could used nowadays. The popular ones are the Angular, React, Vue, Jquery and a lot more. You may check them out see what framework are you able to put an expertise on. 
+
+![Diagram showing HTML, CSS, JavaScript, and front-end tools](https://user-images.githubusercontent.com/20568389/131836300-ee346363-1e3d-4c82-ae35-7baaa152281c.png)
+
+- **HTML gives content structure:** headings, paragraphs, links, forms, and buttons. Use elements for their intended purpose so people and assistive technologies can understand the page.
+- **CSS controls presentation:** spacing, colors, typography, and layouts that work on small and large screens.
+- **JavaScript adds behavior:** responding to a button, validating input, updating the page, or fetching data.
+
+Build a responsive page with plain HTML, CSS, and JavaScript first. Learn the browser's developer tools to inspect styles, read console errors, and see network requests. Check that your page works with a keyboard and that form fields have labels.
+
+Then choose one framework or library when your project needs it. React is a UI library; Angular and Vue are other options for building interfaces. You do not need to learn all of them to start. Understanding JavaScript and the browser makes their conventions easier to learn.
 
 ## Basic Back-end Development
-![image](https://user-images.githubusercontent.com/20568389/131836632-139cd1ae-c00a-4d01-ba83-2fbaf004ef31.png)
 
-The three components for back-end development are the Servers, the Database and the Server-Side programming language.
-- **Server** – as we mentioned a while ago the server contains all the components that you need to run for your website in a single place. In a traditional setting it runs on two operating systems, and they are Linux and Windows. In today’s age, we have Serverless services that are available in the market. When we say serverless meaning this kind of services enables us to build and run applications without having to manage the infrastructure itself. There are popular services that are available, example of which are AWS, Azure, IBM Cloud and Google Cloud. 
-- **Language** – the programing language that we use to write the logic or functions needed for our application. It’s responsible for analyzing what the user has given in the client-side. In connection to the server, what the server does is to run and compile those codes that you created using a particular language and then once the data has been evaluated, the results will just go back to the client-end side.
-- **Database** – it’s where we store our data, the information that we have. Often, we deal with SQL, pronounced as Sequel. It is short for Structured Query Language. It has tables where you do the creation, retrieval, update and deletion of the data that you want to manipulate. Popular relational database is MySql and the Microsoft SQL Server. We also have the NoSQL where instead of tables we have JSON files. JSON is short for JavaScript Object Notation. Instead of tables we have this JSON structure that has parameters and values with it. One example of a NoSQL is MongoDB. Basically, when we say database, it is like a storage box where we put the data information that we have for our users and the application itself.
-- There are a lot of back-end frameworks that you can check with regards to back-end development. For example, ASP.NET utilized C# programming language while Spring boot has Java as it’s language. You may check out the ones depending on your interest or the requirement of your application.
+![Diagram introducing servers, back-end languages, and databases](https://user-images.githubusercontent.com/20568389/131836632-139cd1ae-c00a-4d01-ba83-2fbaf004ef31.png)
 
-## Basic Back-end Development
-![image](https://user-images.githubusercontent.com/20568389/131836710-59c11092-5e08-4a3e-890e-1788c75ed7e4.png)
-- **Code Editors** are the text editors to edit your source code. 
-- Well **Package Managers** is a system that manages your project dependencies. When we say dependencies, we are referring to third-party software that were written by someone else and then you needed that piece of software, so that you don’t have to code everything from scratch. Basically, it’s like a plug-in for your project. The beauty of these package managers is they make things easier for you. You don’t have to manually look for the libraries that you need, you don’t have to download and put them one by one in their correct locations and you don’t have to remove the unnecessary files since it is conveniently manage by them. In the simplest analogy, think of it as you have a package that you wanted to deliver. The package manager is responsible in getting the necessary information and the one who checks where to get the materials that you wanted to to have. We have two example here which is NPM and Yarn.
-- **Build Tools** on a basic level they run tasks and compiles our files. They bundle our files and help turn our development codes into a production-ready code that runs on any device or platform without a problem. If the package manager is the one who gets the things that you need, the build tool is the one who is responsible to bundle your packages that is ready for delivery. So that once you deliver the materials are complete.
-- **Version Control** is also called as “source control”, they track and manages the changes in your source code. For example, you created a code but then there was an error, with this version control, you can revert your source code into their original or working state. It’s like in a game you have an infinite save points that whenever you did something you can always go back and check what more you can do.
+The back end connects requests, application rules, and stored data.
+
+- **Runtime and application code:** a runtime executes your code. Node.js, for example, runs JavaScript outside the browser.
+- **Routes and APIs:** define what happens when a request arrives, such as creating an application record or listing saved records.
+- **Validation and access:** check input on the server and verify who may read or change each record. Browser validation alone is not enough.
+- **Database:** begin with tables, keys, and basic SQL queries. Relational databases include PostgreSQL, MySQL, and SQLite. NoSQL describes several other database models; it does not simply mean storing JSON files.
+- **Hosting:** makes the application reachable. Managed and serverless services can reduce infrastructure work, but your code still runs on servers and needs configuration and monitoring.
+
+A good first back-end project is a small API that creates, reads, updates, and deletes records. Add clear error responses and tests. When adding login or handling sensitive data, use established libraries and seek experienced review.
+
+<a id="basic-back-end-development-1"></a>
+
+## Development Tools
+
+![Overview of code editors, package managers, build tools, and version control](https://user-images.githubusercontent.com/20568389/131836710-59c11092-5e08-4a3e-890e-1788c75ed7e4.png)
+
+The diagrams in this guide come from the original 2021 introduction. Treat tool names as examples, not a checklist of everything you must install.
+
+- **Editor and debugger:** pick an editor you are comfortable using. Learn to set a breakpoint and inspect the program instead of changing code at random.
+- **Git:** record small, meaningful commits, work on a branch, inspect a diff, and open a pull request. A diff shows exactly what changed.
+- **Package manager:** tools such as npm install and track dependencies. Read package documentation and understand why you need a dependency before adding it.
+- **Build tools:** prepare source files for the browser. Use the project's existing setup before adding more tooling.
+- **Terminal:** learn to navigate folders, run the application, and read command output.
+- **Tests and documentation:** make your work easier to verify and hand over. A README should explain setup, usage, and known limitations.
 
 ## Full Stack Development
-![image](https://user-images.githubusercontent.com/20568389/131837442-305bb7a6-12e6-4fde-b1c7-090fe7b129df.png)
-When we say Full Stack Development it is the combination of having the capability to do the front-end and back-end. I’m going to present the TOP 3 popular technology stack that you may encounter once you are in the industry.
 
-- **MEAN** – is an acronym for MongoDB, Express.js, Angular and Node.js
-- **MERN** – is an acronym for MongoDB, Express.js, React and Node.js
-- **MEVN** – is an acronym for MongoDB, Express.js, Vue and Node.js
+![Diagram illustrating the MEAN, MERN, and MEVN technology stacks](https://user-images.githubusercontent.com/20568389/131837442-305bb7a6-12e6-4fde-b1c7-090fe7b129df.png)
 
-These are combination of the tools being used for the creating websites and applications. The only difference between these stacks is how they are structured and how fast you can develop when using them. It might depend on your interest and the requirements of your application. It's highly recommended to at least know one tech stack.
+Full stack development means working across the front end and back end. A “stack” is a combination of technologies used together.
 
-## References:
-To be updated
+For context, MEAN combines MongoDB, Express, Angular, and Node.js; MERN uses React in place of Angular; MEVN uses Vue. These are examples, not requirements or a ranking of what you should learn.
 
+For your first complete application, choose one front-end approach, one back-end language, and one database. Follow a request from the screen to the database and back. You can specialize in one area while gradually learning how the others connect.
 
+## AI and Vibe Coding
+
+People use “vibe coding” in different ways. Here, it means describing what you want to an AI tool and iterating on the generated code, sometimes without reading much of it. That can help you explore an idea, but a working demo alone does not show that you understand or can maintain the application.
+
+**Use AI as a learning partner, and take responsibility for the code you keep.** GitHub's [responsible-use guidance for Copilot](https://docs.github.com/en/copilot/responsible-use/chat) also emphasizes reviewing and testing generated code.
+
+Try this workflow:
+
+1. **Describe the problem yourself.** Write the expected behavior and a few examples, including what should happen when input is missing or invalid.
+2. **Make a small attempt.** For learning exercises, practice the core logic yourself before asking for a complete solution.
+3. **Ask for targeted help.** Request an explanation, a hint, a review, or a comparison of approaches. For example: “Explain why this function fails for an empty list; give me a hint before the solution.”
+4. **Read the proposed changes.** Check each changed file and unfamiliar dependency. Verify APIs against the official documentation.
+5. **Run and test it.** Check normal behavior and failure cases. An AI-generated test can also be wrong; compare it with the original requirement.
+6. **Explain and improve it.** Describe how the feature works in your own words, then change one requirement and implement the adjustment.
+7. **Commit what you understand.** Keep changes small enough to review and undo.
+
+Do not paste passwords, API keys, private user data, or confidential employer code into an unapproved tool. Pay particular attention to authentication, permissions, database changes, and deployment commands. Ask a more experienced developer to review work you cannot yet evaluate.
+
+A useful self-check is: **if the AI tool disappeared tomorrow, could I explain this feature, reproduce its bug, and make a small fix?** If the answer is “not yet,” that is your next learning task.
+
+## A Practical Starting Plan
+
+Move at your own pace. Use these milestones as a guide rather than a deadline or a promise of job readiness.
+
+1. **Build a personal page.** Use semantic HTML and responsive CSS. Publish it and check it on a phone and with a keyboard.
+2. **Build something interactive.** Use your chosen language to make an expense tracker, quiz, or task list. Handle invalid input and save non-sensitive data locally.
+3. **Connect to an API.** Show loading, empty, success, and error states. Learn what happens when the network fails.
+4. **Build a small complete application.** Add your own API and database when you are ready. Keep the scope manageable.
+5. **Make it reviewable.** Write a README, add useful tests, record meaningful commits, and ask someone to review your code.
+
+For a portfolio, explain the problem, your decisions, a bug you solved, and what you would improve. If AI helped, describe how you checked its work. One project you can discuss in depth is a stronger learning foundation than several demos you cannot explain.
+
+You do not need to know everything before applying for a junior role. Keep practicing how to learn, communicate, ask focused questions, and follow through on feedback.
+
+## References
+
+Start with one learning path and use the others when you need a specific explanation. You do not need to finish every resource.
+
+1. [MDN Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) — structured lessons on HTML, CSS, JavaScript, and accessible web development.
+2. [MDN Curriculum](https://developer.mozilla.org/en-US/curriculum/) — a checklist of foundational skills for new front-end developers.
+3. [The Modern JavaScript Tutorial](https://javascript.info/) — language fundamentals, browser events, and working with the page.
+4. [The Odin Project: Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations) — hands-on exercises and projects covering the terminal, Git, HTML, CSS, and JavaScript.
+5. [Harvard CS50: Introduction to Computer Science](https://cs50.harvard.edu/x/) — practice in problem solving, algorithms, and computer science fundamentals.
+6. [Pro Git](https://git-scm.com/book/en/v2) — a reference for commits, branches, collaboration, and version control.
+7. [GitHub Copilot: Responsible Use](https://docs.github.com/en/copilot/responsible-use/chat) — limitations and practices for reviewing and testing AI-assisted work.
