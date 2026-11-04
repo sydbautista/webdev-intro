@@ -31,7 +31,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-
 .contents ol { padding: 0; list-style: none; counter-reset: section; }
 .contents li { counter-increment: section; border-bottom: 1px solid var(--line); }
 .contents a { display: block; padding: .65rem 0; color: var(--muted); font-size: .8rem; text-decoration: none; }
-.contents a::before { content: "0" counter(section); margin-right: .75rem; color: var(--accent); font: .7rem monospace; }
+.contents a::before { content: counter(section, decimal-leading-zero); margin-right: .75rem; color: var(--accent); font: .7rem monospace; }
 .contents a:hover { color: var(--accent); }
 main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(1.4rem, 4vw, 3.5rem); }
 .article h1 { margin: 0 0 1.25rem; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.25; letter-spacing: -.035em; }
